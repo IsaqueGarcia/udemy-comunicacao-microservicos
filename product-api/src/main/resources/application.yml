@@ -3,3 +3,29 @@ server:
 spring:
   application:
     name: product-api
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/product-db
+    username: admin
+    password: 123456
+    initialize: true
+    maxActive: 3
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      format_sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+
+  sql:
+    init:
+      continue-on-error: true
+      mode: always
+      platform: postgresql
+
+  main:
+    allow-circular-references: true
+
