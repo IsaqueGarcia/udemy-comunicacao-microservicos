@@ -1,9 +1,6 @@
 package br.com.isaque.cursoudemy.modules.supplier.controller;
 
 import br.com.isaque.cursoudemy.config.exception.SuccessResponse;
-import br.com.isaque.cursoudemy.modules.category.dto.CategoryResponse;
-import br.com.isaque.cursoudemy.modules.product.dto.ProductRequest;
-import br.com.isaque.cursoudemy.modules.product.dto.ProductResponse;
 import br.com.isaque.cursoudemy.modules.supplier.dto.SupplierRequest;
 import br.com.isaque.cursoudemy.modules.supplier.dto.SupplierResponse;
 import br.com.isaque.cursoudemy.modules.supplier.service.SupplierService;
